@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/java/features",glue = "steps",
         plugin = {"pretty","html:target/report.html","json:target/report.json"},
-        stepNotifications = true,tags = "")
+        stepNotifications = true,tags = "@search-01")
 
 public class TestRunner {
 }
