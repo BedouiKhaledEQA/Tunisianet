@@ -7,9 +7,11 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.net.MalformedURLException;
+
 public class login_steps extends Base {
     @Given("User open the browser")
-    public void user_open_the_browser() {
+    public void user_open_the_browser() throws MalformedURLException {
         luncher();
 
     }
